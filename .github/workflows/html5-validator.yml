@@ -1,2 +1,10 @@
-- name: HTML5 Validator
-  uses: Cyb3r-Jak3/html5validator-action@v0.4
+name: HTML5 Validator
+on:
+  pull_request:
+    types: [open]
+
+jobs:
+  foo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Cyb3r-Jak3/html5validator-action@v0.4
